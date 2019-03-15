@@ -1,0 +1,10 @@
+body {
+  background-image: url(/image.jpg);
+  background-size: 100%;
+}
+
+.number {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+body {
+  background-image: url(/index.jpeg);
+  background-size: 100%;
+}
+
+.number {
+  font-size: 30px;
+  color: red;
+}
