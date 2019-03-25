@@ -16,12 +16,11 @@ $numberTwo = 27;
   multiplier la première variable avec la deuxième
   afficher le résultat
   décrémenter la première variable */
-  while ($numberOne > 10)  //while peut se traduire par tant que.
-  {?>
+  //while peut se traduire par tant que.
+  while ($numberOne >= 10) {?>
     <p class="number">Quand je multiplie ma variable <?= $numberOne ?> par ma variable <?= $numberTwo ?>, j'obtiens <?= $numberOne * $numberTwo ?></p>
-
     <?php
-    $numberOne-- ; //je lance un echo pour incrémanter ma variable.
+    $numberOne-- ; // incrémantation de ma variable.
   }
   ?>
 </body>

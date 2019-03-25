@@ -1,6 +1,3 @@
-<?php
-$number = 20;
-?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -11,11 +8,10 @@ $number = 20;
 <body>
   <?php
   /* En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon. */
-  while ($number >= 0)  //while peut se traduire par tant que.
+  for ($number = 20; $number >= 0; $number --)  //while peut se traduire par tant que.
   {?>
     <p class="number"><?= $number ?> C'est presque bon.</p>
     <?php
-    $number-- ;
   }
   ?>
 </body>

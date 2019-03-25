@@ -1,6 +1,4 @@
-<?php
-$number = 1;
-?>
+<?php $number = 1; ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
@@ -14,15 +12,15 @@ $number = 1;
   Tant que cette variable n'atteint pas 10, il faut :
   l'afficher
   l'incrementer de la moitié de sa valeur */
-  while ($number <= 10)  //while peut se traduire par tant que.
-  {?>
+  //while peut se traduire par tant que.
+  while ($number <= 10) {?>
     <p class="number"><?= $number ?></p>
     <?php
-    $number = $number + ($number/2) ; //je dis à ma variable qu'elle devient égale a sa valeur + la moitié de sa valeur
+    $number += $number/2 ; //je dis à ma variable qu'elle devient égale a sa valeur + la moitié de sa valeur
   }
   ?>
   <p>Seconde possibilité</p>
-  <?php for ($number = 1; $number <= 10 ; $number = $number + ($number/2) ){ ?>
+  <?php for ($number = 1; $number <= 10 ; $number += $number/2) { ?>
     <p class="number"><?= $number ?></p>
   <?php } ?>
 </body>
